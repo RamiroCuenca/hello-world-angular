@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
 })
 export class BodyComponent
 {
+    showCard = true;
+
+    prahse = {
+        author: 'Ben Parker',
+        message: 'A great power requires a greate responsability',
+    };
+
+    actors = ['Spiderman', 'Peter Parker', 'Aunt May', 'Mary Jain', 'Venom', ];
 
 }

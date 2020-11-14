@@ -1,1 +1,26 @@
-<h1>Body component</h1>
+<div class="row">
+    <div class="col">
+        <h1>*ngif</h1>
+        <hr>
+        <div *ngIf="showCard" class="card text-white bg-danger mb-3" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-title">{{ prahse.author }}
+                </h5>
+                <p class="card-text">{{ prahse.message }}</p>
+            </div>
+        </div>
+        <button (click)="showCard = !showCard" class='btn btn-outline-primary btn-block'>
+            Show / Hide
+        </button>
+    </div>
+
+    <div class="col">
+        <h1>*ngfor</h1>
+        <hr>
+        <ul class="list-group">
+            <li *ngFor='let act of actors; let i = index' class="list-group-item list-group-item-danger">
+                {{i + 1}} - {{act}}
+            </li>
+        </ul>
+    </div>
+</div>
